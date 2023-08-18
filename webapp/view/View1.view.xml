@@ -2,6 +2,27 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <VBox id="_IDGenVBox1" class="login-container">
+
+            <Title id="_IDGenTitle1" text="Login" level="H2" />
+            
+                <Input id="_IDGenInput1"
+                    class="field"
+                    value="{/email}"
+                    placeholder="Email"
+                    type="Email"
+                    width="15em"
+                />
+                <Input id="_IDGenInput2"
+                    class="field"
+                    value="{/password}"
+                    placeholder="Password"
+                    type="Password"
+                    width="15em"
+                />
+                <Button id="_IDGenButton1" text="Log in" class="logInButton" press="onLoginPress" />
+            </VBox>
+        </content>
     </Page>
 </mvc:View>
