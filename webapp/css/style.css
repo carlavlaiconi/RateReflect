@@ -1,1 +1,19 @@
 /* Enter your custom styles here */
+
+.login-container{
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.field{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.logInButton{
+    justify-content: end;
+    margin-left: 14em;
+    margin-top: 1em;
+}
+
