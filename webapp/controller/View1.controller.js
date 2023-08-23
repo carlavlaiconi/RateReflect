@@ -10,6 +10,11 @@ sap.ui.define([
         return Controller.extend("ratereflect.controller.View1", {
             onInit: function () {
 
-            }
+            },
+            onLoginPress: function() {
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
+              }
+
         });
     });

@@ -80,10 +80,16 @@
         {
           "name": "RouteView1",
           "pattern": ":?query:",
-          "target": [
-            "TargetView1"
-          ]
+          "target": ["TargetView1"]
+        },
+        {
+          "name": "UserStart",
+          "pattern": "/UserStart",
+          "target": "UserStart"
         }
+        
+
+
       ],
       "targets": {
         "TargetView1": {
@@ -92,6 +98,13 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
+        },
+        "UserStart": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserStart",
+          "viewName": "UserStart"
         }
       }
     },
