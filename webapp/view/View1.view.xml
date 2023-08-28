@@ -9,14 +9,12 @@
             
                 <Input id="_IDGenInput1"
                     class="field"
-                    value="{/email}"
                     placeholder="Email"
                     type="Email"
                     width="15em"
                 />
                 <Input id="_IDGenInput2"
                     class="field"
-                    value="{/password}"
                     placeholder="Password"
                     type="Password"
                     width="15em"

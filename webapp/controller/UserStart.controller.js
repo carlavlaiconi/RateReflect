@@ -18,9 +18,10 @@ sap.ui.define([
                 oRouter.getRoute("UserStart").attachPatternMatched(this._onObjectMatched, this);
             },
 
-            // onAfterRendering: function(){
-            //     this.getView().setBusy(false);
-            // },
+            onProfilePress:function(){
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("UserInfo");
+            },
             _onObjectMatched: async function(){
                 var oView = this.getView();
                 oView.setBusy(true);
