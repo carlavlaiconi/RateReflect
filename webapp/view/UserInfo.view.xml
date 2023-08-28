@@ -20,6 +20,8 @@
     <Text id="_IDGenInput1" text="{viewModel>Name}" />
     <Label id="_IDGenLabel2" text="Email"/>
     <Text id="_IDGenInput2" text="{viewModel>Email}" />
+    <Label id="_IDGenLabel5" text="Role"/>
+    <Text id="_IDGenInput5" text="{viewModel>Role_Name}" />
     <Label id="_IDGenLabel3" text="Career"/>
     <Text id="_IDGenInput3" text="{viewModel>Career}" />
     <Label id="_IDGenLabel4" text="Location"/>
