@@ -1,6 +1,7 @@
 <mvc:View
     controllerName="ratereflect.controller.UserInfo"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
     displayBlock="true"
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
@@ -12,43 +13,20 @@
         <content>
         <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press=" onProfilePress" />
 
-        <HBox id="_IDGenHBox1" items="{viewModel>/Users}">
-    <items>
-        <HBox>
-            <Text text="Name:" />
-            <Text text="{viewModel>Name}" />
-        </HBox>
-        <HBox>
-            <Text text="Email:" />
-            <Text text="{viewModel>Email}" />
-        </HBox>
-        <HBox>
-            <Text text="Career:" />
-            <Text text="{viewModel>Career}" />
-        </HBox>
-        <HBox>
-            <Text text="Location:" />
-            <Text text="{viewModel>Location}" />
-        </HBox>
-    </items>
+<HBox id="_IDGenHBox1" class="UserInformation" items="{viewModel>/Users}">
+<f:SimpleForm id="UserInformation" title="My Profile">
+    <f:content >
+    <Label id="_IDGenLabel1" text="Name"/>
+    <Text id="_IDGenInput1" text="{viewModel>Name}" />
+    <Label id="_IDGenLabel2" text="Email"/>
+    <Text id="_IDGenInput2" text="{viewModel>Email}" />
+    <Label id="_IDGenLabel3" text="Career"/>
+    <Text id="_IDGenInput3" text="{viewModel>Career}" />
+    <Label id="_IDGenLabel4" text="Location"/>
+    <Text id="_IDGenInput4" text="{viewModel>Location}" />
+    </f:content>
+</f:SimpleForm>
 </HBox>
-
-
-         <!-- <Table id="User_Info" items="{viewModel>/Users}">
-        <columns>
-          <Column id="_IDGenColumn1"
-            width="12em">
-            <Label id="_IDGenLabel2" text="Name" />
-          </Column>
-        </columns>
-        <items>
-            <ColumnListItem id="_IDGenColumnListItem1">
-            <cells>
-              <Text id="idListItem" text="{viewModel>Email}" />
-            </cells>
-          </ColumnListItem>
-        </items>
-        </Table> -->
 
         </content>
     </Page>
