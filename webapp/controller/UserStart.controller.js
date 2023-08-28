@@ -22,6 +22,10 @@ sap.ui.define([
                 var oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("UserInfo");
             },
+            onFeedbackPress:function(){
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("Feedback");
+            },
             _onObjectMatched: async function(){
                 var oView = this.getView();
                 oView.setBusy(true);

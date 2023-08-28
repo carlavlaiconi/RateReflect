@@ -11,7 +11,7 @@ sap.ui.define([
     function (Controller, JSONModel, Fragment, Filter, FilterOperator) {
         "use strict";
 
-        return Controller.extend("ratereflect.controller.UserInfo", {
+        return Controller.extend("ratereflect.controller.Feedback", {
             onInit: function () {
 
                 // Create a JSON model for your view
@@ -22,10 +22,10 @@ sap.ui.define([
             var oODataModel = new sap.ui.model.odata.v2.ODataModel("/sap/opu/odata/sap/Z_RATEREFLECT_SRV/");
 
             // Apply filter
-            var oFilter = new Filter("User_ID", FilterOperator.EQ, 1);
+            var oFilter = new Filter("Feedback_ID", FilterOperator.EQ, 1);
 
             // Fetch filtered data
-            oODataModel.read("/Users", {
+            oODataModel.read("/FeedbacksSet", {
                 filters: [oFilter],
                 success: function (oData, oResponse) {
                     // Populate the JSON model with filtered data
@@ -37,7 +37,7 @@ sap.ui.define([
         });
 
                 var oRouter = this.getOwnerComponent().getRouter();
-                oRouter.getRoute("UserInfo").attachPatternMatched(this._onObjectMatched, this);
+                oRouter.getRoute("Feedback").attachPatternMatched(this._onObjectMatched, this);
             },
             
             onProfilePress: function() {
@@ -50,10 +50,7 @@ sap.ui.define([
             // },
             _onObjectMatched: async function(){
                 var oView = this.getView();
-                oView.getModel("CatalogModel").refresh();
-                oView.byId("User_Info").getBinding("items").attachEvent("dataReceived", function(oEvent){
-                    
-                }.bind(this));
+                oView.getModel("viewModel").refresh();
             }
         });
     });
