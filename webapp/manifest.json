@@ -75,6 +75,8 @@
           "metadataUrlParams": {
             "sap-documentation": "heading"
           },
+          "operationMode" : "Server",
+          "synchronizationMode" : "None",
           "defaultBindingMode": "TwoWay",
           "defaultCountMode": "Inline",
           "useBatch": false,
@@ -109,9 +111,12 @@
           "name": "UserStart",
           "pattern": "/UserStart",
           "target": "UserStart"
-        }
-        
-
+        },
+        {
+        "name": "UserInfo",
+        "pattern": "/UserInfo",
+        "target": "UserInfo"
+      }
 
       ],
       "targets": {
@@ -128,6 +133,13 @@
           "clearControlAggregation": false,
           "viewId": "UserStart",
           "viewName": "UserStart"
+        },
+        "UserInfo": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserInfo",
+          "viewName": "UserInfo"
         }
       }
     },
