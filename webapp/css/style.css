@@ -1,19 +1,54 @@
 /* Enter your custom styles here */
 
 .login-container{
-    padding-left: 2em;
-    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
 }
 
 .field{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.button-container{
     margin-top: 1em;
 }
 
-.logInButton{
-    justify-content: end;
-    margin-left: 14em;
-    margin-top: 1em;
+.forgotpasswordButton{
+    margin-right: 5em;
 }
 
+.UserInformation{
+    margin-left:20em;
+}
+.viewInfoBar{
+    margin-bottom: 20px;
+}
+.viewInfoBar .sapMLabel {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.viewInfoBar .sapMText {
+    margin-right: 10PX;
+}
+
+.Comments{
+    margin-bottom:30px;
+}
+.Comments .sapMText{
+    margin-right: 20px;
+}
+
+.description{
+    max-width: 20vw;
+}
+
+.profileIcon{
+    background-color: transparent;
+    color: transparent;
+    font-size: 3em;
+    height: 3em;
+}

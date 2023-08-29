@@ -5,23 +5,27 @@
         <content>
             <VBox id="_IDGenVBox1" class="login-container">
 
-            <Title id="_IDGenTitle1" text="Login" level="H2" />
+            <Title id="_IDGenTitle1" text="Log in" level="H2" />
             
                 <Input id="_IDGenInput1"
                     class="field"
-                    value="{/email}"
                     placeholder="Email"
                     type="Email"
                     width="15em"
                 />
                 <Input id="_IDGenInput2"
                     class="field"
-                    value="{/password}"
                     placeholder="Password"
                     type="Password"
                     width="15em"
                 />
-                <Button id="_IDGenButton1" text="Log in" class="logInButton" press="onLoginPress" />
+
+                <HBox id="_IDGenHBox1" class="button-container">
+                    <Button id="_IDGenButton2" text="Forgot Password" class="forgotpasswordButton" press="onForgotPaswordPress" />
+                    <Button id="_IDGenButton1" text="Log in" class="logInButton" press="onLoginPress" />
+                    <Button id="_IDGenButton12" text="view feedbacks" class="logInButton" press="onViewPress" />
+                    
+                </HBox>
             </VBox>
         </content>
     </Page>

@@ -14,6 +14,17 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.10.5",
       "toolsId": "fb80c015-dec5-4c52-b179-d07ef751ec74"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/Z_RATEREFLECT_SRV/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
     }
   },
   "sap.ui": {
@@ -57,6 +68,20 @@
         "settings": {
           "bundleName": "ratereflect.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainService",
+        "settings": {
+          "metadataUrlParams": {
+            "sap-documentation": "heading"
+          },
+          "operationMode" : "Server",
+          "synchronizationMode" : "None",
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "useBatch": false,
+          "defaultUpdateMethod": "PUT"
+        }
       }
     },
     "resources": {
@@ -80,11 +105,30 @@
         {
           "name": "RouteView1",
           "pattern": ":?query:",
-          "target": [
-            "TargetView1"
-          ]
+          "target": ["TargetView1"]
+        },
+        {
+          "name": "Feedback",
+          "pattern": "/Feedback",
+          "target":"Feedback"
+        },
+        {
+          "name": "UserStart",
+          "pattern": "/UserStart",
+          "target": "UserStart"
+        },
+        {
+        "name": "UserInfo",
+        "pattern": "/UserInfo",
+        "target": "UserInfo"
+        },
+        {
+          "name": "ViewFeedbacks",
+          "pattern": "/ViewFeedbacks",
+          "target": "ViewFeedbacks"
         }
       ],
+
       "targets": {
         "TargetView1": {
           "viewType": "XML",
@@ -92,6 +136,34 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
+        },
+        "UserStart": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserStart",
+          "viewName": "UserStart"
+        },
+        "UserInfo": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserInfo",
+          "viewName": "UserInfo"
+        },
+        "Feedback": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Feedback",
+          "viewName": "Feedback"
+        },
+        "ViewFeedbacks": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "ViewFeedbacks",
+          "viewName": "ViewFeedbacks"
         }
       }
     },
