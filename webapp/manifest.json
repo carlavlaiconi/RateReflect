@@ -124,6 +124,11 @@
           "target": "Feedback"
         },
         {
+          "name": "SendFeedback360",
+          "pattern": "/SendFeedback360",
+          "target":"SendFeedback360"
+        },
+        {
           "name": "UserStart",
           "pattern": "/UserStart",
           "target": "UserStart"
@@ -154,6 +159,13 @@
           "clearControlAggregation": false,
           "viewId": "UserStart",
           "viewName": "UserStart"
+        },
+        "SendFeedback360": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "SendFeedback360",
+          "viewName": "SendFeedback360"
         },
         "UserInfo": {
           "viewType": "XML",
