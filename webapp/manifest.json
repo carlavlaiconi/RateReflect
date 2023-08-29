@@ -126,7 +126,8 @@
         "name": "UserInfo",
         "pattern": "/UserInfo",
         "target": "UserInfo"
-      }
+        }
+        
 
       ],
       "targets": {

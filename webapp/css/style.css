@@ -45,3 +45,10 @@
 .description{
     max-width: 20vw;
 }
+
+.profileIcon{
+    background-color: transparent;
+    color: transparent;
+    font-size: 3em;
+    height: 3em;
+}
