@@ -82,6 +82,13 @@
           "useBatch": false,
           "defaultUpdateMethod": "PUT"
         }
+      },
+      "userDetailsModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "deviceDs",
+        "settings": {
+          "defaultBindingMode": "TwoWay"
+        }
       }
     },
     "resources": {
@@ -120,19 +127,10 @@
           "target": "UserStart"
         },
         {
-<<<<<<< HEAD
           "name": "UserInfo",
           "pattern": "/UserInfo",
           "target": "UserInfo"
         }
-=======
-        "name": "UserInfo",
-        "pattern": "/UserInfo",
-        "target": "UserInfo"
-        }
-        
-
->>>>>>> f3b1506 (user sidenav)
       ],
       "targets": {
         "TargetView1": {

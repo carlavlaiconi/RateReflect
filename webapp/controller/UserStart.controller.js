@@ -18,6 +18,7 @@ sap.ui.define([
                 this.getView().setModel(oModel, "CatalogModel");
                 var oRouter = this.getOwnerComponent().getRouter();
                 oRouter.getRoute("UserStart").attachPatternMatched(this._onObjectMatched, this);
+                var oRouters = sap.ui.core.UIComponent.getRouterFor(this);
                 // this.getSplitAppObj().setHomeIcon({
                 //     'phone': 'phone-icon.png',
                 //     'tablet': 'tablet-icon.png',
@@ -36,6 +37,7 @@ sap.ui.define([
             },
             _onObjectMatched: async function(){
                 var oView = this.getView();
+                var obj = oEvent.getParameter("User_ID").details;
                 // oView.setBusy(true);
                 // oView.getModel("CatalogModel").refresh();
                 //  oView.byId("idProductsTable").getBinding("items").attachEvent("dataReceived", function(oEvent){
