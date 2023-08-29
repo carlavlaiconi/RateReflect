@@ -14,7 +14,11 @@ sap.ui.define([
             onLoginPress: function() {
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
                 oRouter.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
-              }
+              },
+            onViewPress: function() {
+                var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter1.navTo("ViewFeedbacks"); // 
+            }
 
         });
     });
