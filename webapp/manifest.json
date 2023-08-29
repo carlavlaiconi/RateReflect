@@ -82,6 +82,15 @@
           "useBatch": false,
           "defaultUpdateMethod": "PUT"
         }
+      },
+      "userDetailsModel": {
+
+        "type": "sap.ui.model.json.JSONModel",
+
+        "dataSource": "deviceDs",
+
+        "settings": {"defaultBindingMode": "TwoWay"}
+
       }
     },
     "resources": {

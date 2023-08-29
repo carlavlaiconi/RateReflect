@@ -23,8 +23,9 @@ sap.ui.define([
                 this._getUserDetails(oUser, oPwd).then(function (oData) {
                     console.log(oData);
                     if (oData.results.length) {
-                        var oODataJSONModel = new JSONModel(oData.results);
-                        this.getView().setModel(oODataJSONModel, "userLoggedModel");
+                        var userData = new JSONModel(oData.results);
+                        // this.setModel(userData, "userDetailsModel");
+                        sap.ui.getCore().setModel(userData, "userDetailsModel");
                         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
                         oRouter.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
                     } else {
