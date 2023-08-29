@@ -1,0 +1,35 @@
+<mvc:View
+    controllerName="ratereflect.controller.UserInfo"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+        <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press=" onProfilePress" />
+
+<HBox id="_IDGenHBox1" class="UserInformation" items="{viewModel>/Users}">
+<f:SimpleForm id="UserInformation" title="My Profile">
+    <f:content >
+    <Label id="_IDGenLabel1" text="Name"/>
+    <Text id="_IDGenInput1" text="{viewModel>Name}" />
+    <Label id="_IDGenLabel2" text="Email"/>
+    <Text id="_IDGenInput2" text="{viewModel>Email}" />
+    <Label id="_IDGenLabel5" text="Role"/>
+    <Text id="_IDGenInput5" text="{viewModel>Role_Name}" />
+    <Label id="_IDGenLabel3" text="Career"/>
+    <Text id="_IDGenInput3" text="{viewModel>Career}" />
+    <Label id="_IDGenLabel4" text="Location"/>
+    <Text id="_IDGenInput4" text="{viewModel>Location}" />
+    </f:content>
+</f:SimpleForm>
+</HBox>
+
+        </content>
+    </Page>
+</mvc:View>

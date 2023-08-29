@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="ratereflect.controller.Feedback"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+        <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press="onProfilePress" />
+
+<HBox id="_IDGenHBox1" class="UserInformation" items="{viewModel>/FeedbacksSet}">
+<f:SimpleForm id="UserInformation" title="Feedback View">
+    <f:content >
+    <Label id="_IDGenLabel1" text="Name"/>
+    <!-- <Text id="_IDGenInput1" text="{viewModel>}" /> -->
+    
+    </f:content>
+</f:SimpleForm>
+</HBox>
+
+        </content>
+    </Page>
+</mvc:View>

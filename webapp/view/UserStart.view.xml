@@ -1,11 +1,43 @@
-<mvc:View controllerName="ratereflect.controller.UserStart"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+<mvc:View
+    controllerName="ratereflect.controller.UserStart"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
         <content>
-            <Title id="_IDGenTitle1" text="hello" level="H2" />
-        
-               
+        <HBox id='navigationButtons'>
+        <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press="onProfilePress" />
+        <Button id="_IDGenButton2"  text="Feedback Model" class="myProfile" press="onFeedbackPress" />
+        </HBox>
+           <Table id="idProductsTable"
+        inset="false"
+        items="{
+          path: '/Users'
+        }">
+        <headerToolbar>
+          <Toolbar id="_IDGenToolbar1">
+            <Label id="_IDGenLabel1" text="Users"></Label>
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column id="_IDGenColumn1"
+            width="12em">
+            <Label id="_IDGenLabel2" text="Name" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem id="_IDGenColumnListItem1">
+            <cells>
+              <Text id="idListItem" text="{Email}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+</Table>
         </content>
     </Page>
 </mvc:View>
