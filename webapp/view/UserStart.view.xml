@@ -48,6 +48,7 @@
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
     xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    
 	<SplitApp
 		id="SplitAppDemo"
 		initialDetail="detail"
@@ -55,15 +56,15 @@
 		<detailPages>
 			 <Page
 				id="detail"
-				title="Detail 1"
+				title="Feedbacks"
 				backgroundDesign= "Solid"> 
         
 			</Page>
 			<Page
 				id="detailDetail"
-				title="Detail Detail"
+				title="Send 360 feedback"
 				backgroundDesign= "Solid"
-				showNavButton="true"
+				showNavButton="false"
 				navButtonPress=".onPressDetailBack">
 				<VBox id="_IDGenVBox1" class="sapUiSmallMargin">
 					<Label id="_IDGenLabel2" text="This is Detail Page2" />
@@ -78,9 +79,9 @@
 			</Page>
 			<Page
 				id="detail2"
-				title="Detail 3 Page"
+				title="Request PEG"
 				backgroundDesign= "Solid"
-				showNavButton="true"
+				showNavButton="false"
 				navButtonPress=".onPressDetailBack">
 				<Label id="_IDGenLabel3" text="This is Detail Page3" />
 				<Input id="_IDGenInput1"/>
@@ -106,19 +107,18 @@
 			</Page> -->
 			<Page
 				id="master2"
-				title="Master 2"
+				title="Hello, User!"
 				backgroundDesign="List"
 				showNavButton="false"
 				navButtonPress=".onPressMasterBack" >
         <VBox id="_IDGenVBox2">
-           <Button id="_IDGenButton2" visible="true" class="profileIcon" icon="sap-icon://customer" />		
+           <!-- /<Button id="_IDGenbutton" visible="true" class="orice"/>		 -->
         </VBox>
 				<List id="_IDGenList2" itemPress=".onListItemPress">
 					<items>
-            <StandardListItem id="_IDGenStandardListItem5" title="Item 1" icon="sap-icon://accept" />
-						<StandardListItem id="_IDGenStandardListItem2" title="To Detail 1" type="Active" custom:to="pageLogin" />
-						<StandardListItem id="_IDGenStandardListItem3" title="To Detail 2" type="Active" custom:to="detailDetail" />
-						<StandardListItem id="_IDGenStandardListItem4" title="To Detail 3" type="Active" custom:to="detail2" />
+          	<StandardListItem id="_IDGenStandardListItem2" title="Feedbacks" type="Active" custom:to="detail" />
+						<StandardListItem id="_IDGenStandardListItem3" title="Send 360 feedback" type="Active" custom:to="detailDetail" />
+						<StandardListItem id="_IDGenStandardListItem4" title="Request PEG" type="Active" custom:to="detail2" />
 					</items>
         
 				</List>
