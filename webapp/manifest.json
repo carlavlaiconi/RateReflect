@@ -129,11 +129,17 @@
           "target": "UserStart"
         },
         {
-          "name": "UserInfo",
-          "pattern": "/UserInfo",
-          "target": "UserInfo"
+        "name": "UserInfo",
+        "pattern": "/UserInfo",
+        "target": "UserInfo"
+        },
+        {
+          "name": "ViewFeedbacks",
+          "pattern": "/ViewFeedbacks",
+          "target": "ViewFeedbacks"
         }
       ],
+
       "targets": {
         "TargetView1": {
           "viewType": "XML",
@@ -162,6 +168,13 @@
           "clearControlAggregation": false,
           "viewId": "Feedback",
           "viewName": "Feedback"
+        },
+        "ViewFeedbacks": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "ViewFeedbacks",
+          "viewName": "ViewFeedbacks"
         }
       }
     },

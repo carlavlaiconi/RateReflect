@@ -22,14 +22,18 @@ sap.ui.define([
             var oODataModel = new sap.ui.model.odata.v2.ODataModel("/sap/opu/odata/sap/Z_RATEREFLECT_SRV/");
 
             // Apply filter
-            var oFilter = new Filter("Feedback_ID", FilterOperator.EQ, 1);
+            var oFilter = new Filter("Feedback_ID", FilterOperator.EQ, 28);
 
             // Fetch filtered data
             oODataModel.read("/FeedbacksSet", {
                 filters: [oFilter],
                 success: function (oData, oResponse) {
                     // Populate the JSON model with filtered data
-                    oViewModel.setData({ Users: oData.results });
+                    if (oData && oData.results && oData.results.length > 0) {
+                        // Populate the JSON model with filtered data
+                        oViewModel.setProperty("/FeedbacksSet", oData.results);
+                      }
+                    oViewModel.setData({ FeedbacksSet: oData.results });
                 },
                 error: function (oError) {
                     // Handle errors
@@ -39,6 +43,13 @@ sap.ui.define([
                 var oRouter = this.getOwnerComponent().getRouter();
                 oRouter.getRoute("Feedback").attachPatternMatched(this._onObjectMatched, this);
             },
+            onSelectChange: function (oEvent) {
+                var selectedItem = oEvent.getParameter("selectedItem");
+                var selectedKey = selectedItem.getKey();
+                var selectedText = selectedItem.getText();
+          
+                // Handle the selected item
+              },
             
             onProfilePress: function() {
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);

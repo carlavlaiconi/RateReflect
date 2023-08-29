@@ -17,6 +17,7 @@ sap.ui.define([
         return Controller.extend("ratereflect.controller.View1", {
             onInit: function () {
             },
+
             onLoginPress: function () {
                 var oUser = this.getView().byId("Login_email").getValue();  //get input value data in oUser variable 
                 var oPwd = this.getView().byId("Login_password").getValue();    //get input value data in oPwd variable
