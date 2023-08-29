@@ -23,6 +23,25 @@
 .UserInformation{
     margin-left:20em;
 }
-#userInfoLayous{
-    width: 20vw;
+.viewInfoBar{
+    margin-bottom: 20px;
+}
+.viewInfoBar .sapMLabel {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.viewInfoBar .sapMText {
+    margin-right: 10PX;
+}
+
+.Comments{
+    margin-bottom:30px;
+}
+.Comments .sapMText{
+    margin-right: 20px;
+}
+
+.description{
+    max-width: 20vw;
 }

@@ -11,18 +11,77 @@
         title="{i18n>title}"
     >
         <content>
-        <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press="onProfilePress" />
 
-<HBox id="_IDGenHBox1" class="UserInformation" items="{viewModel>/FeedbacksSet}">
-<f:SimpleForm id="UserInformation" title="Feedback View">
+<!-- <Select items="{viewModel>/FeedbacksSet}">
+<core:Item key="{viewModel>Feedback_ID}" text="{viewModel>Project_Name}" />
+</Select> -->
+<HBox id="_IDGenHBox1" items="{viewModel>/FeedbacksSet}">
+<f:SimpleForm id="UserInformation" class="viewFeedbackDetailes" title="FeedbackView">
     <f:content >
-    <Label id="_IDGenLabel1" text="Name"/>
-    <!-- <Text id="_IDGenInput1" text="{viewModel>}" /> -->
+    <VBox>
+    <HBox class="viewInfoBar">
+    <Label id="_IDGenLabel1" text="Sender:"/>
+    <Text id="_IDGenInput1" text="{viewModel>Sender_Name}" />
+    <Label id="_IDGenLabel2" text="Receiver:"/>
+    <Text id="_IDGenInput2" text="{viewModel>Receiver_Name}" />    
+    </HBox>
+    <HBox class="viewInfoBar">
+    <Label id="_IDGenLabel3" text="Date"/>
+    <Text id="_IDGenInput3" text="{viewModel>FB_Date}" />
+    <Label text="Project:"/>
+    <Text text="{viewModel>Project_Name}"/>
+    <Label text="Closed:"/>
+    <Text text="{viewModel>Status}"/></HBox>
+    </VBox>
+    <Label  text="expertise and working results" />
+        <HBox class="Comments" alignItems="Center" justifyContent="Start">
+        <Text class="description" text="Our projects' successes depend on the solutions we deliver continuously applying our knowledge, expertise and experience to offer high quality results" />    
+        <Label text="Rating:"/>
+        <Text text="{viewModel>Rating1}" />
+        <Label text="Comment: "/>
+        <Text text="{viewModel>Comment1}" />
+        </HBox>
+
+    <Label  text="Networking skills and Entrepreneurship" />
+        <HBox class="Comments">
+        <Text class="description" text="Communication is key. Listening and adequately reacting to our client's needs and establishing solid networks, while keeping" />    
+        <Label text="Rating:"/>
+        <Text text="{viewModel>Rating2}" />
+        <Label text="Comment: "/>
+        <Text text="{viewModel>Comment2}" />
+        </HBox>
+        
+    <Label  text="Teaming and Partnership" />
+        <HBox class="Comments">
+        <Text class="description" text="Communication is key. Listening and adequately reacting to our client's needs and establishing solid networks, while keeping" />    
+        <Label text="Rating:"/>
+        <Text text="{viewModel>Rating3}" />
+        <Label text="Comment: "/>
+        <Text text="{viewModel>Comment3}" />
+        </HBox>
+
+    <Label  text="Passion and Resilience" />
+        <HBox class="Comments">
+        <Text class="description" text="In critical situations, it is essential to stay dedicated, keep a level head and appropriately approach arising challenges and complications" />    
+        <Label text="Rating:"/>
+        <Text text="{viewModel>Rating4}" />
+        <Label text="Comment: "/>
+        <Text text="{viewModel>Comment4}" />
+        </HBox>
+
+    <Label  text="Autonomy and Leadership" />
+        <HBox class="Comments">
+        <Text class="description" text="By showing high levels of responsibility, transparency and independent decision-making abilities, the project remains cooperative and its progress is secured" />    
+        <Label text="Rating:"/>
+        <Text text="{viewModel>Rating5}" />
+        <Label text="Comment: "/>
+        <Text text="{viewModel>Comment5}" />
+        </HBox>
     
+
     </f:content>
 </f:SimpleForm>
 </HBox>
-
         </content>
     </Page>
 </mvc:View>

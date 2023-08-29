@@ -13,6 +13,11 @@
         <content>
         <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press=" onProfilePress" />
 
+
+<!-- <Select id="_IDGenSelect1"
+						items="{viewModel>/Users}">
+					<core:Item id="_IDGenItem1" key="{User_ID}" text="{Name}" />
+				</Select> -->
 <HBox id="_IDGenHBox1" class="UserInformation" items="{viewModel>/Users}">
 <f:SimpleForm id="UserInformation" title="My Profile">
     <f:content >
