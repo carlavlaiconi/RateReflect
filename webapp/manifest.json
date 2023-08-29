@@ -75,13 +75,22 @@
           "metadataUrlParams": {
             "sap-documentation": "heading"
           },
-          "operationMode" : "Server",
-          "synchronizationMode" : "None",
+          "operationMode": "Server",
+          "synchronizationMode": "None",
           "defaultBindingMode": "TwoWay",
           "defaultCountMode": "Inline",
           "useBatch": false,
           "defaultUpdateMethod": "PUT"
         }
+      },
+      "userDetailsModel": {
+
+        "type": "sap.ui.model.json.JSONModel",
+
+        "dataSource": "deviceDs",
+
+        "settings": {"defaultBindingMode": "TwoWay"}
+
       }
     },
     "resources": {
@@ -105,12 +114,14 @@
         {
           "name": "RouteView1",
           "pattern": ":?query:",
-          "target": ["TargetView1"]
+          "target": [
+            "TargetView1"
+          ]
         },
         {
           "name": "Feedback",
           "pattern": "/Feedback",
-          "target":"Feedback"
+          "target": "Feedback"
         },
         {
           "name": "UserStart",
