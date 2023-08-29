@@ -22,19 +22,20 @@ sap.ui.define([
                 var oPwd = this.getView().byId("Login_password").getValue();    //get input value data in oPwd variable
                 this._getUserDetails(oUser, oPwd).then(function (oData) {
                     console.log(oData);
-                    if(oData.results.length){
+                    if (oData.results.length) {
                         var oODataJSONModel = new JSONModel(oData.results);
-                        this.getView().setModel(oODataJSONModel,"userLoggedModel");
-                    }else{
-
+                        this.getView().setModel(oODataJSONModel, "userLoggedModel");
+                        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                        oRouter.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
+                    } else {
+                        alert("Wrong Credentials");
                     }
                 }.bind(this)).catch(function (oError) {
 
                     console.log(oError)
 
                 }.bind(this));
-                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-                oRouter.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
+
             },
             _getUserDetails: function (oUser, oPwd) {
                 var oModel = this.getOwnerComponent().getModel();
