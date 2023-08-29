@@ -7,13 +7,13 @@
 
             <Title id="_IDGenTitle1" text="Log in" level="H2" />
             
-                <Input id="_IDGenInput1"
+                <Input id="Login_email"
                     class="field"
                     placeholder="Email"
                     type="Email"
                     width="15em"
                 />
-                <Input id="_IDGenInput2"
+                <Input id="Login_password"
                     class="field"
                     placeholder="Password"
                     type="Password"
