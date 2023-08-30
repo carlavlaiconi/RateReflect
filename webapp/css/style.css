@@ -16,34 +16,10 @@
     margin-top: 1em;
 }
 
-.forgotpasswordButton{
-    margin-right: 5em;
-}
-
-.UserInformation{
-    margin-left:20em;
-}
-.viewInfoBar{
-    margin-bottom: 20px;
-}
-.viewInfoBar .sapMLabel {
-    margin-right: 5px;
-    font-weight: bold;
-}
-
-.viewInfoBar .sapMText {
-    margin-right: 10PX;
-}
-
-.Comments{
-    margin-bottom:30px;
-}
-.Comments .sapMText{
-    margin-right: 20px;
-}
-
-.description{
-    max-width: 20vw;
+.logInButton{
+    justify-content: end;
+    margin-left: 14em;
+    margin-top: 1em;
 }
 
 .profileIcon{
