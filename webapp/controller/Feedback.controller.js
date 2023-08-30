@@ -22,7 +22,7 @@ sap.ui.define([
             var oODataModel = new sap.ui.model.odata.v2.ODataModel("/sap/opu/odata/sap/Z_RATEREFLECT_SRV/");
 
             // Apply filter
-            var oFilter = new Filter("Feedback_ID", FilterOperator.EQ, 28);
+            var oFilter = new Filter("Feedback_ID", FilterOperator.EQ, 12);
 
             // Fetch filtered data
             oODataModel.read("/FeedbacksSet", {
@@ -33,6 +33,7 @@ sap.ui.define([
                         // Populate the JSON model with filtered data
                         oViewModel.setProperty("/FeedbacksSet", oData.results);
                       }
+                      console.log("Received data from OData:", oData.results);
                     oViewModel.setData({ FeedbacksSet: oData.results });
                 },
                 error: function (oError) {
