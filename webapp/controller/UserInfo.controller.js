@@ -50,6 +50,7 @@ sap.ui.define([
             // onAfterRendering: function(){
             //     this.getView().setBusy(false);
             // },
+            
             _onObjectMatched: async function(){
                 var oView = this.getView();
                 oView.getModel("CatalogModel").refresh();

@@ -120,7 +120,7 @@
         },
         {
           "name": "Feedback",
-          "pattern": "/Feedback",
+          "pattern": "/Feedback/{fb_id}",
           "target": "Feedback"
         },
         {
