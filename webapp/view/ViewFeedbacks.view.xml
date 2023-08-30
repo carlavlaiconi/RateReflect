@@ -29,7 +29,8 @@
             <Table
                 id="idProductsTableReceived"
                 inset="false"
-                items="{viewModel>/FeedbacksSet}"
+                items="{
+                    path:'/FeedbacksSet' }"
             >
                 <headerToolbar>
                     <Toolbar id="_IDGenToolbar1">
@@ -82,25 +83,25 @@
                         <cells>
                             <Text
                                 id="idListItem"
-                                text="{viewModel>Project_name}"
+                                text="{Project_name}"
                             />
                         </cells>
                         <cells>
                             <Text
                                 id="idListItem3"
-                                text="{viewModel>FB_Date}"
+                                text="{FB_Date}"
                             />
                         </cells>
                            <cells>
                             <Text
                                 id="idListItem4"
-                                text="{viewModel>Status}"
+                                text="{Status}"
                             />
                         </cells>
                         <cells>
                             <Text
                                 id="idListItem2"
-                                text="{viewModel>Sender_Name}"
+                                text="{Sender_Name}"
                             />
                         </cells>
                     </ColumnListItem>
