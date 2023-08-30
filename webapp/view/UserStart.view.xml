@@ -5,13 +5,16 @@
     displayBlock="true"
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
-    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
-    <Page id="_IDGenHBox1" class=" display: flex; justify-content: center; align-items: center;" >
-      <VBox id="_IDGenVBox1" class=" display: flex; justify-content: center; align-items: center;">
-        <Button id="_IDGenButton2" text="Feedbacks" class="forgotpasswordButton" press="onViewfeedbackPress" />
-        <Button id="_IDGenButton1" text="Send 360 feedback" class="logInButton" press="onPress" />
-        <Button id="_IDGenButton12" text="Request PEG" class="logInButton" press="onPegPress" />
-        <Button id="_IDGenButton13" text="My Profile" class="logInButton" press="onProfilePress" />
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    xmlns:fiori="sap.ui.webc.fiori">
+  
+    <Page id="_IDGenHBox1" class="mySuperRedButton" >
+      <VBox id="_IDGenVBox1" class="mySuperRedButton" >
+        
+        <Button id="_IDGenButton2" icon="sap-icon://documents" text="Feedbacks" class="logInButton" press="onViewfeedbackPress" />
+        <Button id="_IDGenButton1" icon="sap-icon://add-document" text="Send 360 feedback" class="logInButton" press="onPress" />
+        <Button id="_IDGenButton12" icon="sap-icon://enter-more" text="Request PEG" class="logInButton" press="onPegPress" />
+        <Button id="_IDGenButton13" icon="sap-icon://account" text="My Profile" class="logInButton" press="onProfilePress" />
       </VBox>
     </Page>
     

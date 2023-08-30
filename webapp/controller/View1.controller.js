@@ -27,6 +27,7 @@ sap.ui.define([
                         var userData = new JSONModel(oData.results);
                         // this.setModel(userData, "userDetailsModel");
                         sap.ui.getCore().setModel(userData, "userDetailsModel");
+
                         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
                         var vRole = sap.ui.getCore().getModel("userDetailsModel").getData()[0].Role;
                         switch(vRole){
@@ -39,6 +40,7 @@ sap.ui.define([
                             case 1:         // Employee routing 
                                 oRouter.navTo("UserStart"); 
                           }
+
                     } else {
                         MessageBox.error("Wrong Credentials");
                     }
@@ -48,9 +50,6 @@ sap.ui.define([
 
                 }.bind(this));
 
-            },onViewPress: function() {
-                var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);
-                oRouter1.navTo("ViewFeedbacks"); // 
             },
             onViewPress: function() {
                 var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);

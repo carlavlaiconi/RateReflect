@@ -14,6 +14,8 @@ sap.ui.define([
 
         return Controller.extend("ratereflect.controller.UserStart", {
             onInit: function () {
+                var oButton = this.getView().byId("_IDGenButton2");
+                oButton.addStyleClass("mySuperRedButton");
                 var oModel = new JSONModel();
                 this.getView().setModel(oModel, "CatalogModel");
                 var oRouter = this.getOwnerComponent().getRouter();

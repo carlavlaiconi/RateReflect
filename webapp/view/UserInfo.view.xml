@@ -8,7 +8,7 @@
 >
     <Page
         id="page"
-        title="{i18n>title}"
+        title="My Profile"
     >
         <content>
         <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press=" onProfilePress" />
