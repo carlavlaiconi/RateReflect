@@ -49,6 +49,15 @@ sap.ui.define([
             onSentPress: function () {
                 this.getView().byId("ReceivedFeedbackPanel").setVisible(false);
                 this.getView().byId("SentFeedbacksPanel").setVisible(true);
+            },
+            selRow: function(oEvent){
+                var oClickedItem = oEvent.getSource();
+                var sFeedbackID = oClickedItem.getBindingContext().getObject().Feedback_ID;
+                var oRouter = this.getOwnerComponent().getRouter();
+                    oRouter.navTo("Feedback", {
+                        fb_id : sFeedbackID
+                    });
+                
             }
     });
 });

@@ -79,7 +79,7 @@
                     </Column>
                 </columns>
                 <items>
-                    <ColumnListItem id="_IDGenColumnListItem1">
+                    <ColumnListItem id="_IDGenColumnListItem1"  type="Navigation" press='selRow'>
                         <cells>
                             <Text
                                 id="idListItem"
@@ -165,7 +165,7 @@
                     </Column>
                 </columns>
                 <items>
-                    <ColumnListItem id="_IDGenColumnListItem12">
+                    <ColumnListItem id="_IDGenColumnListItem12" type="Navigation" press='selRow'>
                         <cells>
                             <Text
                                 id="idListItem222"
