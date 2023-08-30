@@ -1,4 +1,3 @@
-
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
@@ -101,7 +100,7 @@ sap.ui.define([
             },
             onPegPress: function () {
                 var oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("ReqPeg");
+                oRouter.navTo("Feedback");
             },
             onProfilePress: function () {
                 var oRouter = this.getOwnerComponent().getRouter();
