@@ -52,3 +52,9 @@
     font-size: 3em;
     height: 3em;
 }
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
