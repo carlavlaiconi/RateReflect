@@ -48,8 +48,16 @@
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
     xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <Page id="_IDGenHBox1" class=" display: flex; justify-content: center; align-items: center;" >
+      <VBox id="_IDGenVBox1" class=" display: flex; justify-content: center; align-items: center;">
+        <Button id="_IDGenButton2" text="Feedbacks" class="forgotpasswordButton" press="onViewfeedbackPress" />
+        <Button id="_IDGenButton1" text="Send 360 feedback" class="logInButton" press="onPress" />
+        <Button id="_IDGenButton12" text="Request PEG" class="logInButton" press="onPegPress" />
+        <Button id="_IDGenButton13" text="My Profile" class="logInButton" press="onProfilePress" />
+      </VBox>
+    </Page>
     
-	<SplitApp
+	<!-- <SplitApp
 		id="SplitAppDemo"
 		initialDetail="detail"
 		initialMaster="master">
@@ -78,14 +86,14 @@
 			</Page>
 		</detailPages>
 		<masterPages>
-			<!-- <Page
+			<Page
 				id="master"
 				title="Master 1"
 				backgroundDesign= "List">
 				<List id="_IDGenList1">
 					<StandardListItem id="_IDGenStandardListItem1" title="To Master2" type="Navigation" press=".onPressGoToMaster" />
 				</List>
-			</Page> -->
+			</Page>
 			<Page
 				id="master2"
 				title="Hello, User!"
@@ -93,7 +101,7 @@
 				showNavButton="false"
 				navButtonPress=".onPressMasterBack" >
         <VBox id="_IDGenVBox2">
-           <!-- /<Button id="_IDGenbutton" visible="true" class="orice"/>		 -->
+           /<Button id="_IDGenbutton" visible="true" class="orice"/>		 
         </VBox>
 				<List id="_IDGenList2" itemPress=".onListItemPress">
 					<items>
@@ -105,5 +113,5 @@
 				</List>
 			</Page>
 		</masterPages>
-	</SplitApp>
+	</SplitApp> -->
 </mvc:View>
