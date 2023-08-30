@@ -27,8 +27,8 @@ sap.ui.define([
                         var userData = new JSONModel(oData.results);
                         // this.setModel(userData, "userDetailsModel");
                         sap.ui.getCore().setModel(userData, "userDetailsModel");
-                        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-                        oRouter.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
+                        var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);
+                        oRouter1.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
                     } else {
                         alert("Wrong Credentials");
                     }
@@ -38,9 +38,6 @@ sap.ui.define([
 
                 }.bind(this));
 
-            },onViewPress: function() {
-                var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);
-                oRouter1.navTo("ViewFeedbacks"); // 
             },
             _getUserDetails: function (oUser, oPwd) {
                 var oModel = this.getOwnerComponent().getModel();
