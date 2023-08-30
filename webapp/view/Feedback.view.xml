@@ -8,13 +8,14 @@
 >
     <Page
         id="page"
-        title="{i18n>title}"
+        title="View Feedbacks"
     >
         <content>
 
 <!-- <Select items="{viewModel>/FeedbacksSet}">
 <core:Item key="{viewModel>Feedback_ID}" text="{viewModel>Project_Name}" />
 </Select> -->
+<Button id="_IDGenButton1" press="onCreate" text="Send" />
 <HBox id="_IDGenHBox1" items="{viewModel>/FeedbacksSet}">
 <f:SimpleForm id="UserInformation" class="viewFeedbackDetailes" title="FeedbackView">
     <f:content >
@@ -82,6 +83,9 @@
     </f:content>
 </f:SimpleForm>
 </HBox>
+<Dialog id="oDialogCreate">
+
+</Dialog>
         </content>
     </Page>
 </mvc:View>

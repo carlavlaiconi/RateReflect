@@ -1,2 +1,25 @@
-<mvc:View id="_IDGenView1">
+
+<mvc:View
+    controllerName="ratereflect.controller.Feedback"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="Send 360 Feedback">
+        <!-- <HBox id="_IDGenHBox1" class="UserInformation" items="{viewModel>/FeedbacksSet}">
+         <f:SimpleForm id="UserInformation" title="Feedback 360">
+            <f:content >
+                <Label text="Send to:"/>
+                <Input id="sender"/>
+            </f:content>
+        </f:SimpleForm> 
+        </HBox>
+        <Dialog id="oDialogCreate">
+        </Dialog> -->
+    </Page>
 </mvc:View>
+

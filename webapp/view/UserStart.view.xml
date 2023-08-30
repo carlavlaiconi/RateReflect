@@ -1,109 +1,22 @@
-<!-- <mvc:View
-    controllerName="ratereflect.controller.UserStart"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
-    xmlns="sap.m"
-    xmlns:f="sap.ui.layout.form"
->
-    <Page
-        id="page"
-        title="{i18n>title}"
-    >
-        <content>
-        <HBox id='navigationButtons'>
-        <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press="onProfilePress" />
-        <Button id="_IDGenButton2"  text="Feedback Model" class="myProfile" press="onFeedbackPress" />
-        </HBox>
-           <Table id="idProductsTable"
-        inset="false"
-        items="{
-          path: '/Users'
-        }">
-        <headerToolbar>
-          <Toolbar id="_IDGenToolbar1">
-            <Label id="_IDGenLabel1" text="Users"></Label>
-          </Toolbar>
-        </headerToolbar>
-        <columns>
-          <Column id="_IDGenColumn1"
-            width="12em">
-            <Label id="_IDGenLabel2" text="Name" />
-          </Column>
-        </columns>
-        <items>
-          <ColumnListItem id="_IDGenColumnListItem1">
-            <cells>
-              <Text id="idListItem" text="{Email}" />
-            </cells>
-          </ColumnListItem>
-        </items>
-</Table>
-        </content>
-    </Page>
-</mvc:View> -->
+
 <mvc:View
 	  controllerName="ratereflect.controller.UserStart"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
-    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    xmlns:fiori="sap.ui.webc.fiori">
+  
+    <Page id="_IDGenHBox1" class="mySuperRedButton" >
+      <VBox id="_IDGenVBox1" class="mySuperRedButton" >
+        
+        <Button id="_IDGenButton2" icon="sap-icon://documents" text="Feedbacks" class="logInButton" press="onViewfeedbackPress" />
+        <Button id="_IDGenButton1" icon="sap-icon://add-document" text="Send 360 feedback" class="logInButton" press="onPress" />
+        <Button id="_IDGenButton12" icon="sap-icon://enter-more" text="Request PEG" class="logInButton" press="onPegPress" />
+        <Button id="_IDGenButton13" icon="sap-icon://account" text="My Profile" class="logInButton" press="onProfilePress" />
+      </VBox>
+    </Page>
     
-	<SplitApp
-		id="SplitAppDemo"
-		initialDetail="detail"
-		initialMaster="master">
-		<detailPages>
-			 <Page
-				id="detail"
-				title="Feedbacks"
-				backgroundDesign= "Solid"> 
-        
-			</Page>
-			<Page
-				id="detailDetail"
-				title="Send 360 feedback"
-				backgroundDesign= "Solid"
-				showNavButton="false"
-				navButtonPress=".onPressDetailBack">
-				
-			</Page>
-			<Page
-				id="detail2"
-				title="Request PEG"
-				backgroundDesign= "Solid"
-				showNavButton="false"
-				navButtonPress=".onPressDetailBack">
 
-			</Page>
-		</detailPages>
-		<masterPages>
-			<!-- <Page
-				id="master"
-				title="Master 1"
-				backgroundDesign= "List">
-				<List id="_IDGenList1">
-					<StandardListItem id="_IDGenStandardListItem1" title="To Master2" type="Navigation" press=".onPressGoToMaster" />
-				</List>
-			</Page> -->
-			<Page
-				id="master2"
-				title="Hello, User!"
-				backgroundDesign="List"
-				showNavButton="false"
-				navButtonPress=".onPressMasterBack" >
-        <VBox id="_IDGenVBox2">
-           <!-- /<Button id="_IDGenbutton" visible="true" class="orice"/>		 -->
-        </VBox>
-				<List id="_IDGenList2" itemPress=".onListItemPress">
-					<items>
-          	<StandardListItem id="_IDGenStandardListItem2" title="Feedbacks" type="Active" custom:to="detail" />
-						<StandardListItem id="_IDGenStandardListItem3" title="Send 360 feedback" type="Active" custom:to="detailDetail" />
-						<StandardListItem id="_IDGenStandardListItem4" title="Request PEG" type="Active" custom:to="detail2" />
-					</items>
-        
-				</List>
-			</Page>
-		</masterPages>
-	</SplitApp>
 </mvc:View>

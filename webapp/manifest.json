@@ -94,6 +94,39 @@
           "target": [
             "TargetView1"
           ]
+<<<<<<< HEAD
+=======
+        },
+        {
+          "name": "Feedback",
+          "pattern": "/Feedback",
+          "target": "Feedback"
+        },
+        {
+          "name": "SendFeedback360",
+          "pattern": "/SendFeedback360",
+          "target":"SendFeedback360"
+        },
+        {
+          "name": "UserStart",
+          "pattern": "/UserStart",
+          "target": "UserStart"
+        },
+        {
+        "name": "UserInfo",
+        "pattern": "/UserInfo",
+        "target": "UserInfo"
+        },
+        {
+          "name": "ViewFeedbacks",
+          "pattern": "/ViewFeedbacks",
+          "target": "ViewFeedbacks"
+        },
+        {
+          "name": "ReqPeg",
+          "pattern": "/ReqPeg",
+          "target": "ReqPeg"
+>>>>>>> 24961f7723fe431a1b6a7264bd668976a4ce1650
         }
       ],
 
@@ -104,6 +137,51 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
+<<<<<<< HEAD
+=======
+        },
+        "UserStart": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserStart",
+          "viewName": "UserStart"
+        },
+        "SendFeedback360": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "SendFeedback360",
+          "viewName": "SendFeedback360"
+        },
+        "UserInfo": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "UserInfo",
+          "viewName": "UserInfo"
+        },
+        "Feedback": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Feedback",
+          "viewName": "Feedback"
+        },
+        "ViewFeedbacks": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "ViewFeedbacks",
+          "viewName": "ViewFeedbacks"
+        },
+        "ReqPeg": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "ReqPeg",
+          "viewName": "ReqPeg"
+>>>>>>> 24961f7723fe431a1b6a7264bd668976a4ce1650
         }
       }
     },
