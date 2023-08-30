@@ -11,7 +11,7 @@
     <Page id="_IDGenHBox1"  >
       <VBox id="_IDGenVBox1" class="mySuperRedButton" >
         <Button id="_IDGenButton2" icon="sap-icon://documents" text="See Feedbacks" class="logInButton" press="onViewfeedbackPress" />
-        <Button id="_IDGenButton1" icon="sap-icon://add-document" text="Send 360 Feedback" class="logInButton" press="onPress" />
+        <Button id="_IDGenButton1" icon="sap-icon://add-document" text="Send 360 Feedback" class="logInButton" press="on360Press" />
         <Button id="_IDGenButton12" icon="sap-icon://enter-more" text="Request PEG" class="logInButton" press="onPegPress" />
         <Button id="_IDGenButton13" icon="sap-icon://account" text="My Profile" class="logInButton" press="onProfilePress" />
       </VBox>

@@ -28,7 +28,7 @@ sap.ui.define([
                 var oView = this.getView();
                 var receiver = oView.byId("_IDGenInput2").getValue();
                 if(receiver == ""){
-                    //error message
+                    MessageBox.error("The reciever doesn't exist");
                 }else 
                 {
                     var project = oView.byId("_IDGenText1").getValue();
@@ -70,6 +70,8 @@ sap.ui.define([
                     });
 
                 }
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("UserStart");
             }
 
 

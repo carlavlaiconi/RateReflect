@@ -80,6 +80,21 @@ sap.ui.define([
                         }
                     })
                 })
+            },
+            onForgotPasswordPress: function () {
+                var oUser = this.getView().byId("Login_email").getValue().toUpperCase();
+                var oModel = new sap.ui.model.odata.ODataModel("/sap/opu/odata/sap/Z_RATEREFLECT_SRV/");
+                if(oUser === ""){
+                    MessageBox.error("Please put email adress");
+                }else{
+                    oModel.callFunction("ForgotPassword", // function import name
+                                        "POST", // http method
+                                        {"Email" : oUser  }, // function import parameters
+                                        null,        
+                                        function(oData, response) { }, // callback function for success
+                                        function(oError){} ); // callback function for error
+                    MessageBox.success("The email was sent.")
+                }
             }
         });
     });

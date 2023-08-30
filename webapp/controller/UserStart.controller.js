@@ -38,7 +38,7 @@ sap.ui.define([
                 var oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("Feedback");
             },
-            _onObjectMatched: async function(){
+            _onObjectMatched: async function(oEvent){
                 var oView = this.getView();
                 var obj = oEvent.getParameter("arguments").details;
                 // oView.setBusy(true);
@@ -95,7 +95,7 @@ sap.ui.define([
                 var oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("ViewFeedbacks");
             },
-            onPress: function () {
+            on360Press: function () {
                 var oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("SendFeedback360");
             },
@@ -106,6 +106,6 @@ sap.ui.define([
             onProfilePress: function () {
                 var oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("UserInfo");
-            }
+            },
         });
     });

@@ -20,7 +20,7 @@
                     width="15em"
                 />
                 <HBox id="_IDGenHBox1" class="button-container">
-                    <Button id="_IDGenButton2" text="Forgot Password" class="forgotpasswordButton" press="onForgotPaswordPress" />
+                    <Button id="_IDGenButton2" text="Forgot Password" class="forgotpasswordButton" press="onForgotPasswordPress" />
                     <Button id="_IDGenButton1" text="Log in" class="logInButton" press="onLoginPress" />
                 </HBox>
             </VBox>
