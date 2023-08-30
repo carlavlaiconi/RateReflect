@@ -68,6 +68,29 @@
         "settings": {
           "bundleName": "ratereflect.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainService",
+        "settings": {
+          "metadataUrlParams": {
+            "sap-documentation": "heading"
+          },
+          "operationMode": "Server",
+          "synchronizationMode": "None",
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "useBatch": false,
+          "defaultUpdateMethod": "PUT"
+        }
+      },
+      "userDetailsModel": {
+
+        "type": "sap.ui.model.json.JSONModel",
+
+        "dataSource": "deviceDs",
+
+        "settings": {"defaultBindingMode": "TwoWay"}
+
       }
     },
     "resources": {
@@ -94,8 +117,6 @@
           "target": [
             "TargetView1"
           ]
-<<<<<<< HEAD
-=======
         },
         {
           "name": "Feedback",
@@ -126,7 +147,6 @@
           "name": "ReqPeg",
           "pattern": "/ReqPeg",
           "target": "ReqPeg"
->>>>>>> 24961f7723fe431a1b6a7264bd668976a4ce1650
         }
       ],
 
@@ -137,8 +157,6 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
-<<<<<<< HEAD
-=======
         },
         "UserStart": {
           "viewType": "XML",
@@ -181,7 +199,6 @@
           "clearControlAggregation": false,
           "viewId": "ReqPeg",
           "viewName": "ReqPeg"
->>>>>>> 24961f7723fe431a1b6a7264bd668976a4ce1650
         }
       }
     },
