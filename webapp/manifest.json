@@ -142,6 +142,11 @@
           "name": "ViewFeedbacks",
           "pattern": "/ViewFeedbacks",
           "target": "ViewFeedbacks"
+        },
+        {
+          "name": "ReqPeg",
+          "pattern": "/ReqPeg",
+          "target": "ReqPeg"
         }
       ],
 
@@ -187,6 +192,13 @@
           "clearControlAggregation": false,
           "viewId": "ViewFeedbacks",
           "viewName": "ViewFeedbacks"
+        },
+        "ReqPeg": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "ReqPeg",
+          "viewName": "ReqPeg"
         }
       }
     },

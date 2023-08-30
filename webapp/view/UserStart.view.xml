@@ -1,46 +1,4 @@
-<!-- <mvc:View
-    controllerName="ratereflect.controller.UserStart"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
-    xmlns="sap.m"
-    xmlns:f="sap.ui.layout.form"
->
-    <Page
-        id="page"
-        title="{i18n>title}"
-    >
-        <content>
-        <HBox id='navigationButtons'>
-        <Button id="_IDGenButton1"  text="My Profile" class="myProfile" press="onProfilePress" />
-        <Button id="_IDGenButton2"  text="Feedback Model" class="myProfile" press="onFeedbackPress" />
-        </HBox>
-           <Table id="idProductsTable"
-        inset="false"
-        items="{
-          path: '/Users'
-        }">
-        <headerToolbar>
-          <Toolbar id="_IDGenToolbar1">
-            <Label id="_IDGenLabel1" text="Users"></Label>
-          </Toolbar>
-        </headerToolbar>
-        <columns>
-          <Column id="_IDGenColumn1"
-            width="12em">
-            <Label id="_IDGenLabel2" text="Name" />
-          </Column>
-        </columns>
-        <items>
-          <ColumnListItem id="_IDGenColumnListItem1">
-            <cells>
-              <Text id="idListItem" text="{Email}" />
-            </cells>
-          </ColumnListItem>
-        </items>
-</Table>
-        </content>
-    </Page>
-</mvc:View> -->
+
 <mvc:View
 	  controllerName="ratereflect.controller.UserStart"
     xmlns:mvc="sap.ui.core.mvc"
@@ -66,37 +24,23 @@
 		initialMaster="master">
 		<detailPages>
 			 <Page
-				id="detail"
+				id="UserStart"
 				title="Feedbacks"
 				backgroundDesign= "Solid"> 
-        
-			</Page>
-			<Page
-				id="detailDetail"
-				title="Send 360 feedback"
-				backgroundDesign= "Solid"
-				showNavButton="false"
-				navButtonPress=".onPressDetailBack">
-				
-			</Page>
-			<Page
-				id="detail2"
-				title="Request PEG"
-				backgroundDesign= "Solid"
-				showNavButton="false"
-				navButtonPress=".onPressDetailBack">
+	
+			
 
 			</Page>
 		</detailPages>
 		<masterPages>
-			<Page
+			<!-- <Page
 				id="master"
 				title="Master 1"
 				backgroundDesign= "List">
 				<List id="_IDGenList1">
 					<StandardListItem id="_IDGenStandardListItem1" title="To Master2" type="Navigation" press=".onPressGoToMaster" />
 				</List>
-			</Page>
+			</Page> -->
 			<Page
 				id="master2"
 				title="Hello, User!"
@@ -104,7 +48,7 @@
 				showNavButton="false"
 				navButtonPress=".onPressMasterBack" >
         <VBox id="_IDGenVBox2">
-           /<Button id="_IDGenbutton" visible="true" class="orice"/>		 
+           <!-- /<Button id="_IDGenbutton" visible="true" class="orice"/>		 -->
         </VBox>
 				<List id="_IDGenList2" itemPress=".onListItemPress">
 					<items>
@@ -116,5 +60,5 @@
 				</List>
 			</Page>
 		</masterPages>
-	</SplitApp> -->
+	</SplitApp>
 </mvc:View>

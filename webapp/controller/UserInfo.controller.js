@@ -22,7 +22,8 @@ sap.ui.define([
             var oODataModel = new sap.ui.model.odata.v2.ODataModel("/sap/opu/odata/sap/Z_RATEREFLECT_SRV/");
 
             // Apply filter
-            var oFilter = new Filter("User_ID", FilterOperator.EQ, 1);
+            var my_id = sap.ui.getCore().getModel("userDetailsModel").getData()[0].User_ID;
+            var oFilter = new Filter("User_ID", FilterOperator.EQ, my_id);
 
             // Fetch filtered data
             oODataModel.read("/Users", {
@@ -30,6 +31,7 @@ sap.ui.define([
                 success: function (oData, oResponse) {
                     // Populate the JSON model with filtered data
                     oViewModel.setData({ Users: oData.results });
+                    console.log("Received data from OData:", oData.results);
                 },
                 error: function (oError) {
                     // Handle errors

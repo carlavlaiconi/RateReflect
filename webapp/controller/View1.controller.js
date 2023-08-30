@@ -27,10 +27,22 @@ sap.ui.define([
                         var userData = new JSONModel(oData.results);
                         // this.setModel(userData, "userDetailsModel");
                         sap.ui.getCore().setModel(userData, "userDetailsModel");
-                        var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);
-                        oRouter1.navTo("UserStart"); // "secondPage" is the name of the route defined in manifest.json
+
+                        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                        var vRole = sap.ui.getCore().getModel("userDetailsModel").getData()[0].Role;
+                        switch(vRole){
+                            case 2:        //Project manager routing
+                                oRouter.navTo("UserStart"); 
+                              break;
+                            case 3:         //Team manager routing
+                                oRouter.navTo("UserStart"); 
+                              break;
+                            case 1:         // Employee routing 
+                                oRouter.navTo("UserStart"); 
+                          }
+
                     } else {
-                        alert("Wrong Credentials");
+                        MessageBox.error("Wrong Credentials");
                     }
                 }.bind(this)).catch(function (oError) {
 
@@ -38,6 +50,10 @@ sap.ui.define([
 
                 }.bind(this));
 
+            },
+            onViewPress: function() {
+                var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter1.navTo("ViewFeedbacks"); // 
             },
             _getUserDetails: function (oUser, oPwd) {
                 var oModel = this.getOwnerComponent().getModel();
