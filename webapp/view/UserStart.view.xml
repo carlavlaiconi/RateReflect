@@ -18,47 +18,5 @@
       </VBox>
     </Page>
     
-	<!-- <SplitApp
-		id="SplitAppDemo"
-		initialDetail="detail"
-		initialMaster="master">
-		<detailPages>
-			 <Page
-				id="UserStart"
-				title="Feedbacks"
-				backgroundDesign= "Solid"> 
-	
-			
 
-			</Page>
-		</detailPages>
-		<masterPages>
-			<!-- <Page
-				id="master"
-				title="Master 1"
-				backgroundDesign= "List">
-				<List id="_IDGenList1">
-					<StandardListItem id="_IDGenStandardListItem1" title="To Master2" type="Navigation" press=".onPressGoToMaster" />
-				</List>
-			</Page> -->
-			<Page
-				id="master2"
-				title="Hello, User!"
-				backgroundDesign="List"
-				showNavButton="false"
-				navButtonPress=".onPressMasterBack" >
-        <VBox id="_IDGenVBox2">
-           <!-- /<Button id="_IDGenbutton" visible="true" class="orice"/>		 -->
-        </VBox>
-				<List id="_IDGenList2" itemPress=".onListItemPress">
-					<items>
-          	<StandardListItem id="_IDGenStandardListItem2" title="Feedbacks" type="Active" custom:to="detail" />
-						<StandardListItem id="_IDGenStandardListItem3" title="Send 360 feedback" type="Active" custom:to="detailDetail" />
-						<StandardListItem id="_IDGenStandardListItem4" title="Request PEG" type="Active" custom:to="detail2" />
-					</items>
-        
-				</List>
-			</Page>
-		</masterPages>
-	</SplitApp>
 </mvc:View>
