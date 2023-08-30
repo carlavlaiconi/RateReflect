@@ -16,15 +16,10 @@
     margin-top: 1em;
 }
 
-.forgotpasswordButton{
-    margin-right: 5em;
-}
-
-.UserInformation{
-    margin-left:20em;
-}
-#userInfoLayous{
-    width: 20vw;
+.logInButton{
+    justify-content: end;
+    margin-left: 14em;
+    margin-top: 1em;
 }
 
 .profileIcon{

@@ -19,10 +19,10 @@
                     type="Password"
                     width="15em"
                 />
-
                 <HBox id="_IDGenHBox1" class="button-container">
                     <Button id="_IDGenButton2" text="Forgot Password" class="forgotpasswordButton" press="onForgotPaswordPress" />
                     <Button id="_IDGenButton1" text="Log in" class="logInButton" press="onLoginPress" />
+                    <Button id="_IDGenButton12" text="view feedbacks" class="logInButton" press="onViewPress" />
                 </HBox>
             </VBox>
         </content>

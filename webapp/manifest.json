@@ -68,27 +68,6 @@
         "settings": {
           "bundleName": "ratereflect.i18n.i18n"
         }
-      },
-      "": {
-        "dataSource": "mainService",
-        "settings": {
-          "metadataUrlParams": {
-            "sap-documentation": "heading"
-          },
-          "operationMode": "Server",
-          "synchronizationMode": "None",
-          "defaultBindingMode": "TwoWay",
-          "defaultCountMode": "Inline",
-          "useBatch": false,
-          "defaultUpdateMethod": "PUT"
-        }
-      },
-      "userDetailsModel": {
-        "type": "sap.ui.model.json.JSONModel",
-        "dataSource": "deviceDs",
-        "settings": {
-          "defaultBindingMode": "TwoWay"
-        }
       }
     },
     "resources": {
@@ -115,23 +94,9 @@
           "target": [
             "TargetView1"
           ]
-        },
-        {
-          "name": "Feedback",
-          "pattern": "/Feedback",
-          "target": "Feedback"
-        },
-        {
-          "name": "UserStart",
-          "pattern": "/UserStart",
-          "target": "UserStart"
-        },
-        {
-          "name": "UserInfo",
-          "pattern": "/UserInfo",
-          "target": "UserInfo"
         }
       ],
+
       "targets": {
         "TargetView1": {
           "viewType": "XML",
@@ -139,27 +104,6 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
-        },
-        "UserStart": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "UserStart",
-          "viewName": "UserStart"
-        },
-        "UserInfo": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "UserInfo",
-          "viewName": "UserInfo"
-        },
-        "Feedback": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "Feedback",
-          "viewName": "Feedback"
         }
       }
     },
