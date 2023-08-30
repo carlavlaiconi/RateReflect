@@ -87,6 +87,22 @@ sap.ui.define([
                     Log.info("SplitApp object can't be found");
                 }
                 return result;
+            },
+            onViewfeedbackPress: function () {
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("ViewFeedbacks");
+            },
+            onPress: function () {
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("SendFeedback360");
+            },
+            onPegPress: function () {
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("Feedback");
+            },
+            onProfilePress: function () {
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("UserInfo");
             }
         });
     });

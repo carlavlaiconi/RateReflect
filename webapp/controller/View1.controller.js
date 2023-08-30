@@ -38,6 +38,9 @@ sap.ui.define([
 
                 }.bind(this));
 
+            },onViewPress: function() {
+                var oRouter1 = sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter1.navTo("ViewFeedbacks"); // 
             },
             _getUserDetails: function (oUser, oPwd) {
                 var oModel = this.getOwnerComponent().getModel();
@@ -49,6 +52,7 @@ sap.ui.define([
                     ],
                     and: true
                 }));
+
                 return new Promise((resolve, reject) => {
                     oModel.read("/Users", {
                         filters: aFilters,

@@ -6,7 +6,20 @@
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
     xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <Page id="_IDGenHBox1" class=" display: flex; justify-content: center; align-items: center;" >
+      <VBox id="_IDGenVBox1" class=" display: flex; justify-content: center; align-items: center;">
+        <Button id="_IDGenButton2" text="Feedbacks" class="forgotpasswordButton" press="onViewfeedbackPress" />
+        <Button id="_IDGenButton1" text="Send 360 feedback" class="logInButton" press="onPress" />
+        <Button id="_IDGenButton12" text="Request PEG" class="logInButton" press="onPegPress" />
+        <Button id="_IDGenButton13" text="My Profile" class="logInButton" press="onProfilePress" />
+      </VBox>
+    </Page>
     
+	<!-- <SplitApp
+		id="SplitAppDemo"
+		initialDetail="detail"
+		initialMaster="master">
+		<detailPages>
 			 <Page
 				id="UserStart"
 				title="Feedbacks"
@@ -15,4 +28,34 @@
 			
 
 			</Page>
+		</detailPages>
+		<masterPages>
+			<!-- <Page
+				id="master"
+				title="Master 1"
+				backgroundDesign= "List">
+				<List id="_IDGenList1">
+					<StandardListItem id="_IDGenStandardListItem1" title="To Master2" type="Navigation" press=".onPressGoToMaster" />
+				</List>
+			</Page> -->
+			<Page
+				id="master2"
+				title="Hello, User!"
+				backgroundDesign="List"
+				showNavButton="false"
+				navButtonPress=".onPressMasterBack" >
+        <VBox id="_IDGenVBox2">
+           <!-- /<Button id="_IDGenbutton" visible="true" class="orice"/>		 -->
+        </VBox>
+				<List id="_IDGenList2" itemPress=".onListItemPress">
+					<items>
+          	<StandardListItem id="_IDGenStandardListItem2" title="Feedbacks" type="Active" custom:to="detail" />
+						<StandardListItem id="_IDGenStandardListItem3" title="Send 360 feedback" type="Active" custom:to="detailDetail" />
+						<StandardListItem id="_IDGenStandardListItem4" title="Request PEG" type="Active" custom:to="detail2" />
+					</items>
+        
+				</List>
+			</Page>
+		</masterPages>
+	</SplitApp>
 </mvc:View>

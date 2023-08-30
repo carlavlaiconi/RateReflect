@@ -16,13 +16,13 @@
                     id="_IDGenButton1"
                     text="Received"
                     class="myProfile"
-                    press="onProfilePress"
+                    press="onReceivedPress"
                 />
                 <Button
                     id="_IDGenButton2"
                     text="Sent"
                     class="myProfile"
-                    press="onFeedbackPress"
+                    press="onSentPress"
                 />
             </HBox>
             <Table
